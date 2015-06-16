@@ -1,17 +1,19 @@
-[push]
-	default = upstream
-[user]
-	name = Marius Colacioiu
-	email = marius.colacioiu@gmail.com
-[color]
-	ui = auto
-[core]
-	excludesfile = /Users/marius/.gitignore
-[credential]
-	helper = osxkeychain
 [github]
-	user = colmarius
-[diff]
-	submodule = log
+	user = MagdaMalinowska
 [column]
 	ui = auto,dense
+[user]
+	name = Magdalena Malinowska
+	email = magda@codequest.com
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/magda/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[branch]
+	autosetuprebase = always
