@@ -4,7 +4,7 @@ pushd "$HOME"
 
   if [ -d ".dot-files" ]; then
     pushd ".dot-files"
-      git smart-pull
+      git pull
     popd
   else
     git clone "git://github.com/MagdaMalinowska/dot-files.git" ".dot-files"
